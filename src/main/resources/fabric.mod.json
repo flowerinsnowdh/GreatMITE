@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "GreatMITE",
+  "version": "${version}",
+  "name": "GreatMITE",
+  "description": "",
+  "authors": [
+    "flowerinsnow"
+  ],
+  "contact": {
+    "repo": "https://github.com/flowerinsnowdh/GreatMITE"
+  },
+  "license": "MIT",
+  "icon": "assets/GreatMITE/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "online.flowerinsnow.greatmite.client.GreatMITEClient"
+    ],
+    "main": [
+      "online.flowerinsnow.greatmite.GreatMITE"
+    ]
+  },
+  "mixins": [
+    "GreatMITE.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
