@@ -41,6 +41,7 @@ public class GreatMITE implements ModInitializer {
     public static final Item DOUGH = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
             .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.6F).build()));
     public static final Item FLOUR = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16));
+    public static final Item LEMON = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16));
 
     @Override
     public void onInitialize() {
@@ -94,5 +95,6 @@ public class GreatMITE implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "cheese"), CHEESE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "chocolate"), CHOCOLATE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "dough"), DOUGH);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "lemon"), LEMON);
     }
 }
