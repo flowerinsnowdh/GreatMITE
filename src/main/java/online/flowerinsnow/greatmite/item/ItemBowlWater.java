@@ -14,7 +14,7 @@ import online.flowerinsnow.greatmite.util.InventoryUtils;
 public class ItemBowlWater extends Item {
     public ItemBowlWater() {
         super(new FabricItemSettings()
-                .group(ItemGroup.FOOD).maxCount(8).food(
+                .group(ItemGroup.FOOD).maxCount(4).food(
                         new FoodComponent.Builder().alwaysEdible().saturationModifier(0.0F).hunger(0).build()
                 ));
     }
