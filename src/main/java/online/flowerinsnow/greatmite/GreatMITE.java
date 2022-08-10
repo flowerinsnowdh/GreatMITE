@@ -63,6 +63,37 @@ public class GreatMITE implements ModInitializer {
     private void initMaxCount() {
         ReflectMirror.Item.setMaxCount(Items.BOWL, 16);
         ReflectMirror.Item.setMaxCount(Items.SUGAR, 16);
+        ReflectMirror.Item.setMaxCount(Items.COD, 16);
+        ReflectMirror.Item.setMaxCount(Items.COOKED_COD, 16);
+        ReflectMirror.Item.setMaxCount(Items.SALMON, 16);
+        ReflectMirror.Item.setMaxCount(Items.COOKED_SALMON, 16);
+        ReflectMirror.Item.setMaxCount(Items.TROPICAL_FISH, 16);
+        ReflectMirror.Item.setMaxCount(Items.PUFFERFISH, 16);
+        ReflectMirror.Item.setMaxCount(Items.COOKIE, 16);
+        ReflectMirror.Item.setMaxCount(Items.MELON_SLICE, 16);
+        ReflectMirror.Item.setMaxCount(Items.GLISTERING_MELON_SLICE, 16);
+        ReflectMirror.Item.setMaxCount(Items.MELON, 8);
+        ReflectMirror.Item.setMaxCount(Items.DRIED_KELP, 16);
+        ReflectMirror.Item.setMaxCount(Items.DRIED_KELP_BLOCK, 8);
+        ReflectMirror.Item.setMaxCount(Items.BEEF, 16);
+        ReflectMirror.Item.setMaxCount(Items.COOKED_BEEF, 16);
+        ReflectMirror.Item.setMaxCount(Items.CHICKEN, 16);
+        ReflectMirror.Item.setMaxCount(Items.COOKED_CHICKEN, 16);
+        ReflectMirror.Item.setMaxCount(Items.ROTTEN_FLESH, 16);
+        ReflectMirror.Item.setMaxCount(Items.SPIDER_EYE, 16);
+        ReflectMirror.Item.setMaxCount(Items.CARROT, 16);
+        ReflectMirror.Item.setMaxCount(Items.POTATO, 16);
+        ReflectMirror.Item.setMaxCount(Items.BAKED_POTATO, 16);
+        ReflectMirror.Item.setMaxCount(Items.POISONOUS_POTATO, 16);
+        ReflectMirror.Item.setMaxCount(Items.PUMPKIN_PIE, 8);
+        ReflectMirror.Item.setMaxCount(Items.RABBIT, 16);
+        ReflectMirror.Item.setMaxCount(Items.COOKED_RABBIT, 16);
+        ReflectMirror.Item.setMaxCount(Items.MUTTON, 16);
+        ReflectMirror.Item.setMaxCount(Items.COOKED_MUTTON, 16);
+        ReflectMirror.Item.setMaxCount(Items.BEETROOT, 16);
+        ReflectMirror.Item.setMaxCount(Items.SWEET_BERRIES, 16);
+        ReflectMirror.Item.setMaxCount(Items.GLOW_BERRIES, 16);
+        ReflectMirror.Item.setMaxCount(Items.DANDELION, 32);
         // TODO 更多物品堆叠上限待修改
     }
 
