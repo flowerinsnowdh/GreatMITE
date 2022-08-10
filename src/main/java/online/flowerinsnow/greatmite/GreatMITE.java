@@ -17,23 +17,25 @@ import online.flowerinsnow.greatmite.util.ReflectMirror;
 public class GreatMITE implements ModInitializer {
     public static final String MODID = "greatmite";
     public static final ItemBowlWater BOWL_WATER = new ItemBowlWater();
-    public static final ItemStackableStew SALAD = new ItemStackableStew(1, 1.0F);
-    public static final ItemStackableStew BEEF_STEW = new ItemStackableStew(16, 16.0F);
+    public static final ItemStackableStew SALAD = new ItemStackableStew(1, 0.1F);
+    public static final ItemStackableStew BEEF_STEW = new ItemStackableStew(16, 1.6F);
     public static final ItemStackableStew BOWL_MILK = new ItemStackableStew(1, 0.0F, true);
-    public static final ItemStackableStew CEREAL = new ItemStackableStew(2, 4.0F);
-    public static final ItemStackableStew CHICKEN_SOUP = new ItemStackableStew(10, 10.0F, true);
-    public static final ItemStackableStew CREAM_OF_MUSHROOM_SOUP = new ItemStackableStew(5, 3.0F, true);
-    public static final ItemStackableStew CREAM_OF_VEGETABLE_SOUP = new ItemStackableStew(7, 7.0F, true);
-    public static final ItemStackableStew ICE_CREAM = new ItemStackableStew(7, 7.0F);
-    public static final ItemStackableStew MASHED_POTATO = new ItemStackableStew(8, 12.0F);
-    public static final ItemStackableStew PORRIDGE = new ItemStackableStew(2, 4.0F);
-    public static final ItemStackableStew PUMPKIN_SOUP = new ItemStackableStew(2, 1.0F);
-    public static final ItemStackableStew SORBET = new ItemStackableStew(2, 4.0F);
-    public static final ItemStackableStew VEGETABLE_SOUP = new ItemStackableStew(6, 6.0F, true);
+    public static final ItemStackableStew CEREAL = new ItemStackableStew(2, 0.4F);
+    public static final ItemStackableStew CHICKEN_SOUP = new ItemStackableStew(10, 1.0F, true);
+    public static final ItemStackableStew CREAM_OF_MUSHROOM_SOUP = new ItemStackableStew(5, 0.3F, true);
+    public static final ItemStackableStew CREAM_OF_VEGETABLE_SOUP = new ItemStackableStew(7, 0.7F, true);
+    public static final ItemStackableStew ICE_CREAM = new ItemStackableStew(7, 0.7F);
+    public static final ItemStackableStew MASHED_POTATO = new ItemStackableStew(8, 1.2F);
+    public static final ItemStackableStew PORRIDGE = new ItemStackableStew(2, 0.4F);
+    public static final ItemStackableStew PUMPKIN_SOUP = new ItemStackableStew(2, 0.1F);
+    public static final ItemStackableStew SORBET = new ItemStackableStew(2, 0.4F);
+    public static final ItemStackableStew VEGETABLE_SOUP = new ItemStackableStew(6, 0.6F, true);
     public static final Item BANANA = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(2.0F).build()));
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.2F).build()));
     public static final Item BLUEBERRIES = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(1.0F).build()));
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.1F).build()));
+    public static final Item CHEESE = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
+            .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3F).build()));
 
     @Override
     public void onInitialize() {
@@ -64,6 +66,7 @@ public class GreatMITE implements ModInitializer {
         ReflectMirror.Item.setFoodcomponent(Items.BEETROOT_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(1.0F).build());
         ReflectMirror.Item.setFoodcomponent(Items.SUGAR, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(1.0F).build());
         ReflectMirror.Item.setFoodcomponent(Items.NETHER_WART, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(1.0F).build());
+        ReflectMirror.Item.setFoodcomponent(Items.COOKED_BEEF, new FoodComponent.Builder().hunger(10).saturationModifier(1.0F).meat().build());
     }
 
     private void registerNewItems() {
