@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shapeless",
+  "group": "greatmite",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "dandelion"
+    },
+    {
+      "item": "dandelion"
+    },
+    {
+      "item": "dandelion"
+    }
+  ],
+  "result": {
+    "item": "greatmite:salad"
+  }
+}

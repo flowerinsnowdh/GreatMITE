@@ -1,3 +1,16 @@
 {
-  "item.greatmite.water_bowl": "水碗"
+  "item.greatmite.water_bowl": "水碗",
+  "item.greatmite.salad": "§2沙拉",
+  "item.greatmite.beef_stew": "§6牛肉羹",
+  "item.greatmite.bowl_milk": "§c牛奶碗",
+  "item.greatmite.cereal": "§e麦片粥",
+  "item.greatmite.chicken_soup": "§6鸡汤",
+  "item.greatmite.cream_of_mushroom_soup": "§c奶油蘑菇汤",
+  "item.greatmite.cream_of_vegetable_soup": "§6奶油蔬菜汤",
+  "item.greatmite.ice_cream": "§e冰激凌",
+  "item.greatmite.mashed_potato": "§c土豆泥",
+  "item.greatmite.porridge": "§a蓝莓粥",
+  "item.greatmite.pumpkin_soup": "§2南瓜粥",
+  "item.greatmite.sorbet": "§a果汁雪糕",
+  "item.greatmite.vegetable_soup": "§2蔬菜汤"
 }

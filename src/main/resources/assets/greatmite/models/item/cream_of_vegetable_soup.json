@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "greatmite:item/cream_of_vegetable_soup"
+  }
+}

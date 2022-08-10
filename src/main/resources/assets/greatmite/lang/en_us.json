@@ -1,3 +1,16 @@
 {
-  "item.greatmite.water_bowl": "Water Bowl"
+  "item.greatmite.water_bowl": "Water Bowl",
+  "item.greatmite.salad": "§2Salad",
+  "item.greatmite.beef_stew": "§6Beef Stew",
+  "item.greatmite.bowl_milk": "§cMilk Bowl",
+  "item.greatmite.cereal": "§eCereal",
+  "item.greatmite.chicken_soup": "§6Chicken Soup",
+  "item.greatmite.cream_of_mushroom_soup": "§cCream of Mushroom Soup",
+  "item.greatmite.cream_of_vegetable_soup": "§6Cream of Vegetable Soup",
+  "item.greatmite.ice_cream": "§eIce Cream",
+  "item.greatmite.mashed_potato": "§cMashed Potato",
+  "item.greatmite.porridge": "§aPorridge",
+  "item.greatmite.pumpkin_soup": "§2Pumpkin Soup",
+  "item.greatmite.sorbet": "§aSorbet",
+  "item.greatmite.vegetable_soup": "§2Vegetable Soup"
 }
