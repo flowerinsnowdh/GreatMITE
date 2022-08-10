@@ -17,35 +17,35 @@ import online.flowerinsnow.greatmite.util.ReflectMirror;
 public class GreatMITE implements ModInitializer {
     public static final String MODID = "greatmite";
     public static final ItemBowlWater BOWL_WATER = new ItemBowlWater();
-    public static final ItemStackableStew SALAD = new ItemStackableStew(1, 0.1F);
-    public static final ItemStackableStew BEEF_STEW = new ItemStackableStew(16, 1.6F);
+    public static final ItemStackableStew SALAD = new ItemStackableStew(1, 0.05F);
+    public static final ItemStackableStew BEEF_STEW = new ItemStackableStew(16, 0.8F);
     public static final ItemStackableStew BOWL_MILK = new ItemStackableStew(1, 0.0F, true);
-    public static final ItemStackableStew CEREAL = new ItemStackableStew(2, 0.4F);
-    public static final ItemStackableStew CHICKEN_SOUP = new ItemStackableStew(10, 1.0F, true);
-    public static final ItemStackableStew CREAM_OF_MUSHROOM_SOUP = new ItemStackableStew(5, 0.3F, true);
-    public static final ItemStackableStew CREAM_OF_VEGETABLE_SOUP = new ItemStackableStew(7, 0.7F, true);
-    public static final ItemStackableStew ICE_CREAM = new ItemStackableStew(7, 0.7F);
-    public static final ItemStackableStew MASHED_POTATO = new ItemStackableStew(8, 1.2F);
-    public static final ItemStackableStew PORRIDGE = new ItemStackableStew(2, 0.4F);
-    public static final ItemStackableStew PUMPKIN_SOUP = new ItemStackableStew(2, 0.1F);
-    public static final ItemStackableStew SORBET = new ItemStackableStew(2, 0.4F);
-    public static final ItemStackableStew VEGETABLE_SOUP = new ItemStackableStew(6, 0.6F, true);
+    public static final ItemStackableStew CEREAL = new ItemStackableStew(2, 0.2F);
+    public static final ItemStackableStew CHICKEN_SOUP = new ItemStackableStew(10, 0.5F, true);
+    public static final ItemStackableStew CREAM_OF_MUSHROOM_SOUP = new ItemStackableStew(5, 0.15F, true);
+    public static final ItemStackableStew CREAM_OF_VEGETABLE_SOUP = new ItemStackableStew(7, 0.35F, true);
+    public static final ItemStackableStew ICE_CREAM = new ItemStackableStew(7, 0.35F);
+    public static final ItemStackableStew MASHED_POTATO = new ItemStackableStew(8, 0.6F);
+    public static final ItemStackableStew PORRIDGE = new ItemStackableStew(2, 0.2F);
+    public static final ItemStackableStew PUMPKIN_SOUP = new ItemStackableStew(2, 0.05F);
+    public static final ItemStackableStew SORBET = new ItemStackableStew(2, 0.2F);
+    public static final ItemStackableStew VEGETABLE_SOUP = new ItemStackableStew(6, 0.3F, true);
     public static final Item BANANA = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.2F).build()));
-    public static final Item BLUEBERRIES = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
             .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.1F).build()));
+    public static final Item BLUEBERRIES = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.05F).build()));
     public static final Item CHEESE = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3F).build()));
+            .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.15F).build()));
     public static final Item CHOCOLATE = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3F).build()));
+            .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.15F).build()));
     public static final Item DOUGH = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.6F).build()));
+            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3F).build()));
     public static final Item FLOUR = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16));
     public static final Item LEMON = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16));
     public static final Item ONION = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.1F).build()));
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.05F).build()));
     public static final Item ORANGE = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.2F).build()));
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.1F).build()));
 
     @Override
     public void onInitialize() {
@@ -70,13 +70,13 @@ public class GreatMITE implements ModInitializer {
      * 将原版不能吃的东西变得能吃，或修改植物营养值
      */
     private void modifyFood() {
-        ReflectMirror.Item.setFoodcomponent(Items.WHEAT_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(1.0F).build());
-        ReflectMirror.Item.setFoodcomponent(Items.PUMPKIN_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(2).saturationModifier(1.0F).build());
-        ReflectMirror.Item.setFoodcomponent(Items.MELON_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(1).saturationModifier(1.0F).build());
-        ReflectMirror.Item.setFoodcomponent(Items.BEETROOT_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(1.0F).build());
-        ReflectMirror.Item.setFoodcomponent(Items.SUGAR, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(1.0F).build());
-        ReflectMirror.Item.setFoodcomponent(Items.NETHER_WART, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(1.0F).build());
-        ReflectMirror.Item.setFoodcomponent(Items.COOKED_BEEF, new FoodComponent.Builder().hunger(10).saturationModifier(1.0F).meat().build());
+        ReflectMirror.Item.setFoodcomponent(Items.WHEAT_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(0.05F).build());
+        ReflectMirror.Item.setFoodcomponent(Items.PUMPKIN_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(2).saturationModifier(0.05F).build());
+        ReflectMirror.Item.setFoodcomponent(Items.MELON_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(1).saturationModifier(0.05F).build());
+        ReflectMirror.Item.setFoodcomponent(Items.BEETROOT_SEEDS, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(0.05F).build());
+        ReflectMirror.Item.setFoodcomponent(Items.SUGAR, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(0.05F).build());
+        ReflectMirror.Item.setFoodcomponent(Items.NETHER_WART, new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(0.05F).build());
+        ReflectMirror.Item.setFoodcomponent(Items.COOKED_BEEF, new FoodComponent.Builder().hunger(10).saturationModifier(0.5F).meat().build());
     }
 
     private void registerNewItems() {
@@ -96,7 +96,7 @@ public class GreatMITE implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "vegetable_soup"), VEGETABLE_SOUP);
         Registry.register(Registry.ITEM, new Identifier(MODID, "banana"), BANANA);
         Registry.register(Registry.ITEM, new Identifier(MODID, "blueberries"), BLUEBERRIES);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "cheese"), CHEESE);
+//        Registry.register(Registry.ITEM, new Identifier(MODID, "cheese"), CHEESE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "chocolate"), CHOCOLATE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "dough"), DOUGH);
         Registry.register(Registry.ITEM, new Identifier(MODID, "lemon"), LEMON);
