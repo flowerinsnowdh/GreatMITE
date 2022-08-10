@@ -99,7 +99,7 @@ public class GreatMITE implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "cheese"), CHEESE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "chocolate"), CHOCOLATE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "dough"), DOUGH);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "dough"), FLOUR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "flour"), FLOUR);
         Registry.register(Registry.ITEM, new Identifier(MODID, "lemon"), LEMON);
         Registry.register(Registry.ITEM, new Identifier(MODID, "onion"), ONION);
         Registry.register(Registry.ITEM, new Identifier(MODID, "orange"), ORANGE);
