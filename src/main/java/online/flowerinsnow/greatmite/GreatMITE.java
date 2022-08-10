@@ -40,6 +40,7 @@ public class GreatMITE implements ModInitializer {
             .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3F).build()));
     public static final Item DOUGH = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
             .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.6F).build()));
+    public static final Item FLOUR = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16));
 
     @Override
     public void onInitialize() {
