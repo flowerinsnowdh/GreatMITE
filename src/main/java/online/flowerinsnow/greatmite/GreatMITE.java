@@ -2,7 +2,10 @@ package online.flowerinsnow.greatmite;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.FoodComponent;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -27,6 +30,8 @@ public class GreatMITE implements ModInitializer {
     public static final ItemStackableStew PUMPKIN_SOUP = new ItemStackableStew(2, 1.0F);
     public static final ItemStackableStew SORBET = new ItemStackableStew(2, 4.0F);
     public static final ItemStackableStew VEGETABLE_SOUP = new ItemStackableStew(6, 6.0F, true);
+    public static final Item BANANA = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16)
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(2.0F).build()));
 
     @Override
     public void onInitialize() {
@@ -74,5 +79,6 @@ public class GreatMITE implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "pumpkin_soup"), PUMPKIN_SOUP);
         Registry.register(Registry.ITEM, new Identifier(MODID, "sorbet"), SORBET);
         Registry.register(Registry.ITEM, new Identifier(MODID, "vegetable_soup"), VEGETABLE_SOUP);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "banana"), BANANA);
     }
 }
